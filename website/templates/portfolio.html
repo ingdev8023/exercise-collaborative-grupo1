@@ -1,2 +1,73 @@
 <!-- your html code here -->
-<p>Hello, I'm the portfolio.html</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilos para la sección de Portfolio */
+        .portfolio {
+            padding-top: 40px;
+        }
+
+        .portfolio h2 {
+            font-size: 24px;
+        }
+
+        .portfolio p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px; /* Espacio negativo para compensar el espacio positivo a continuación */
+        }
+
+        .project {
+            flex: 0 0 calc(33.333% - 20px);
+            border: none;
+            margin-bottom: 20px;
+            padding: 0 10px; /* Espacio entre las columnas */
+        }
+
+        .project img {
+            border: none;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        .project h3 {
+            color: #007BFF;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .project p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros et mauris aliquet posuere.</p>
+        <div class="projects">
+            <div class="project">
+                <img src="https://picsum.photos/500/300" alt="Project 1">
+                <h3>Project Name 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/500/300" alt="Project 2">
+                <h3>Project Name 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/500/300" alt="Project 3">
+                <h3>Project Name 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
